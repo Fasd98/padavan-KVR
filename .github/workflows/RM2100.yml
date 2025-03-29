@@ -242,16 +242,16 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_PARTED=y" >> .config
 
         ##包含 SMB（和 WINS）服务器。约 1.5MB
-        echo "CONFIG_FIRMWARE_INCLUDE_SMBD=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SMBD=y" >> .config
 
         ##使用 samba3.6 替代 samba3
-        echo "CONFIG_FIRMWARE_INCLUDE_SMBD36=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SMBD36=y" >> .config
 
         ##包含 SMB 和 WINS 服务器的日志功能。约 0.3MB
         echo "CONFIG_FIRMWARE_INCLUDE_SMBD_SYSLOG=n" >> .config
 
         ##包含 FTP 服务器。约 0.2MB
-        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=y" >> .config
 
         ##包含替代的 L2TP 控制客户端 RP-L2TP。约 0.1MB
         echo "CONFIG_FIRMWARE_INCLUDE_RPL2TP=n" >> .config
@@ -269,22 +269,22 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SFTP=n" >> .config
 
         ##包含 dropbear SSH。约 0.3MB
-        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y" >> .config
 
         ## 加速 dropbear 的对称加密和哈希运算。约 0.06MB
-        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=y" >> .config
 
         ##使用 OpenSSH 替代 dropbear。openssl 约 1.2MB，openssh 约 1.0MB
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> .config
 
         ##包含 StrongSwan。XFRM 模块约 0.2MB，strongswan 约 0.7MB
         echo "CONFIG_FIRMWARE_INCLUDE_SSWAN=n" >> .config
 
         ##为 openssl 库添加椭圆曲线（EC）支持。约 0.1MB
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC=y" >> .config
 
         ##包含 "openssl" 可执行程序，用于生成证书。约 0.4MB
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y" >> .config
 
         ##包含 xUPNPd IPTV 媒体服务器。约 0.3MB
         echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config
